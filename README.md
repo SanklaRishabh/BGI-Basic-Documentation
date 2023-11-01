@@ -2,7 +2,7 @@
 
 C does not provide methods for creating graphics in its standard library. However, there are some open-source or third-party libraries available to create stunning visuals. This documentation introduces Borland Software Corporation's **BGI** (Borland Graphical Interface) library that was included with the computer installation of Turbo C/C++.
 
-> [!info]
+> [!note]
 > `graphics.h` and other headers and libraries, maintained by open-source developers for GCC can be downloaded from the internet.
 
 ## Graphical Coordinate System
@@ -215,7 +215,7 @@ The original BGI library is compatible with 11 types of fonts in graphical mode:
 | SANS_SERIF_FONT | 3 | COMPLEX_FONT | 8 |
 | GOTHIC_FONT | 4 | EUROPEAN_FONT | 9 |
 
-> [!info]
+> [!note]
 > The font styles may not work in newer editions of some popular operating systems, as well as in the BGI libraries maintained by open-source developers for extended support.
 
 1. `settextstyle`: This function sets the text size, direction and font style. It takes up three arguments, `font`, `direction`, and `charsize`. `font` represents the font styles supported by BGI, `direction` represents the flow of the text— `HORIZ_DIR` is horizontal (left-to-right) and `VERT_DIR` is vertical (top-to-bottom), `charsize` represents the character size.
